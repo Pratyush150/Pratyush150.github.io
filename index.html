@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>We build complex things — robotics, automation and AI engineering studio</title>
+    <meta
+      name="description"
+      content="An engineering studio for robotics, automation and applied AI. Stereo visual SLAM at 1.256% translation error on KITTI, a COCO mAP implementation that matches pycocotools to zero, and a pose-graph back end cross-checked against GTSAM. Every number has the command that produces it."
+    />
+    <link rel="canonical" href="https://pratyush150.github.io/" />
+    <meta name="theme-color" content="#070706" />
+    <meta name="color-scheme" content="dark" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://pratyush150.github.io/" />
+    <meta property="og:site_name" content="Pratyush Vatsa — engineering studio" />
+    <meta property="og:title" content="We build complex things" />
+    <meta
+      property="og:description"
+      content="Software for machines that have to work outside the lab. Robotics and control, simulation and testing, automation and AI, and the product layer on top."
+    />
+    <meta property="og:image" content="https://pratyush150.github.io/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="WE BUILD COMPLEX THINGS. set in heavy condensed type on near-black, with an amber availability mark."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="We build complex things" />
+    <meta
+      name="twitter:description"
+      content="Software for machines that have to work outside the lab. Every number on the page has the command that produces it."
+    />
+    <meta name="twitter:image" content="https://pratyush150.github.io/og.png" />
+
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23070706'/%3E%3Cpath d='M5 27 C5 12 11 5 19 5 C25 5 27 10 24 14 C21 18 13 17 11 22 C9 26 14 28 20 26' fill='none' stroke='%23FFB000' stroke-width='2.2' stroke-linecap='square'/%3E%3Crect x='24' y='24' width='4' height='4' fill='%23FFB000'/%3E%3C/svg%3E"
+    />
+    <link rel="apple-touch-icon" href="/og.png" />
+
+    <link
+      rel="preload"
+      href="/fonts/Chivo-900-hero.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="/fonts/Chivo-var.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "url": "https://pratyush150.github.io/",
+        "mainEntity": {
+          "@type": "Person",
+          "name": "Pratyush Vatsa",
+          "jobTitle": "Robotics, Automation & Product Engineering",
+          "url": "https://pratyush150.github.io/",
+          "sameAs": [
+            "https://github.com/Pratyush150",
+            "https://www.linkedin.com/in/pratyush-vatsa-a03292372"
+          ],
+          "knowsAbout": [
+            "ROS 2",
+            "PX4",
+            "ArduPilot",
+            "MAVLink",
+            "visual SLAM",
+            "pose graph optimisation",
+            "LiDAR SLAM",
+            "control systems",
+            "state estimation",
+            "Gazebo",
+            "Isaac Sim",
+            "industrial automation",
+            "Modbus",
+            "OPC-UA",
+            "object detection benchmarking",
+            "retrieval-augmented generation",
+            "React",
+            "React Native"
+          ]
+        }
+      }
+    </script>
+
+    <script>
+      // Applied before first paint, so nothing flashes and no reveal is hidden
+      // from a reader whose JavaScript never arrives.
+      //
+      //   .js        the reveal primitives are allowed to start hidden
+      //   motion     ON / OFF, taken from the reader's OS preference
+      (function () {
+        var d = document.documentElement;
+        var reduce = false;
+        try {
+          reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        } catch (e) {
+          /* older browser: treat as no preference */
+        }
+        var motion = reduce ? 'off' : 'on';
+        d.setAttribute('data-motion', motion);
+        try {
+          if ('IntersectionObserver' in window && motion === 'on' && !reduce) {
+            d.classList.add('js');
+          }
+        } catch (e) {
+          /* leave every reveal in its final position */
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
