@@ -1,0 +1,900 @@
+{
+  "person": {
+    "name": "Pratyush Vatsa",
+    "title": "Robotics, Automation & Product Engineering Studio",
+    "tagline": "ROS 2, PX4, industrial automation and applied AI. We write software only, and it runs on real machines — not just in simulation.",
+    "location": "India — working with clients worldwide",
+    "email": "pratyushvatsa2018@gmail.com",
+    "github": "https://github.com/Pratyush150",
+    "fiverr": "https://www.fiverr.com/s/YLvqY7z",
+    "linkedin": "https://www.linkedin.com/in/pratyush-vatsa-a03292372"
+  },
+  "hero": {
+    "headline": "Software for machines that have to work outside the lab",
+    "subheadline": "Robotics and control, simulation and testing, automation and AI, and the apps people use to run all of it.",
+    "blurb": "We write the layer between hardware and the software that makes decisions for it: MAVLink bridges, ROS 2 bringup, LiDAR SLAM diagnostics, edge perception, Modbus acquisition, workflow engines, retrieval-grounded assistants, and the dashboards and mobile apps on top. Most jobs reach us the same way — a machine or a process is doing something wrong and nobody can say why. We find the reason first, then fix it in code you can read and maintain.",
+    "ctas": [
+      {
+        "label": "See the work",
+        "href": "#projects"
+      },
+      {
+        "label": "Services & pricing",
+        "href": "#services"
+      },
+      {
+        "label": "GitHub",
+        "href": "https://github.com/Pratyush150"
+      }
+    ]
+  },
+  "credibility": [
+    {
+      "stat_or_label": "Our code runs on real machines",
+      "detail": "We write software, not hardware — but it runs on flight controllers, companion computers, serial links, PLCs and encoders, so it has already met the failure modes that only show up when the USB port renumbers mid-flight or a Modbus device reverses its word order."
+    },
+    {
+      "stat_or_label": "Diagnosis before implementation",
+      "detail": "Every engagement starts with a written root-cause report. You get an explanation you can act on even if you never hire us for the fix."
+    },
+    {
+      "stat_or_label": "Four disciplines, one team",
+      "detail": "Robotics and control, simulation and testing, automation and AI, and product. The same people write the real-time loop and the app that monitors it, so the seams between them are not somebody else's problem."
+    },
+    {
+      "stat_or_label": "Everything runs offline and is tested",
+      "detail": "Heavy dependencies are guarded. Simulators and synthetic data with injected defects mean the tests assert detection against known ground truth, not just code coverage."
+    },
+    {
+      "stat_or_label": "Open, readable source",
+      "detail": "Public repositories with tests, type hints, and READMEs that state limitations as clearly as features. You can read the code before you talk to us."
+    },
+    {
+      "stat_or_label": "Honest about scope",
+      "detail": "We say no to work we would do badly. A wrong yes costs you more than an honest no, and it costs us the reference."
+    }
+  ],
+  "categories": [
+    {
+      "slug": "robotics-control",
+      "name": "Robotics & control",
+      "blurb": "ROS 2, PX4 and ArduPilot drone autonomy, MAVLink integration, LiDAR SLAM, control systems and state estimation, real-time perception on Jetson and Raspberry Pi. Our code runs on real vehicles, not just in simulation, so it has already met the failure modes you are hitting."
+    },
+    {
+      "slug": "simulation-testing",
+      "name": "Simulation & testing",
+      "blurb": "Gazebo, Isaac Sim and AirSim environments for testing robots before they exist in metal, plus automated regression testing of robot behaviour."
+    },
+    {
+      "slug": "automation-ai",
+      "name": "Automation & AI",
+      "blurb": "Industrial automation, workflow automation, AI chatbots and FAQ assistants, LLM integrations, internal tools that remove manual work."
+    },
+    {
+      "slug": "product",
+      "name": "Product",
+      "blurb": "Mobile apps and web applications, built by people who also write embedded real-time code, so performance and reliability are not afterthoughts."
+    }
+  ],
+  "services": [
+    {
+      "slug": "robotics-control",
+      "title": "Robotics & control engineering",
+      "hook": "Get the flight controller, the companion computer, the sensors and the control loop working as one system — including when the link drops.",
+      "problem": "Your robot works on the bench and misbehaves in the field. Telemetry stops arriving and nobody notices until the aircraft does something stupid. Offboard mode gets rejected. The SLAM map drifts through the floor. The detector reports 10 FPS and the boxes lag reality by two seconds. Every tutorial assumes a perfect link, a clean IMU and a workstation GPU, so none of them tell you which of the six plausible causes is yours.",
+      "deliverables": [
+        "Root-cause report from your logs, bag files, configuration and wiring, with the reasoning shown and the ruled-out causes listed",
+        "MAVLink or ROS 2 integration between flight controller, companion computer and sensors, with reconnect and staleness handling",
+        "Control and estimation work: PID with anti-windup and filtered derivative, cascaded loops, LQR, complementary/Madgwick/EKF attitude estimation, motor mixing",
+        "LiDAR SLAM bring-up and diagnostics: extrinsics validation, time-sync offset recovery, z-drift decomposition, degeneracy analysis",
+        "Real-time perception on Jetson, Raspberry Pi or Hailo with per-stage p50/p90/p99 profiling and adaptive frame skipping",
+        "Handover notes covering the link setup, the parameters that matter, and the two failure modes most likely to bite you next"
+      ],
+      "stack": [
+        "ROS 2",
+        "PX4",
+        "ArduPilot",
+        "MAVLink",
+        "pymavlink",
+        "LIO-SAM",
+        "Cartographer",
+        "TensorRT",
+        "ONNX Runtime",
+        "Python",
+        "C++",
+        "Jetson",
+        "Raspberry Pi"
+      ],
+      "tiers": [
+        {
+          "name": "Basic — Diagnosis",
+          "scope": "We read your log, bag file, configuration and wiring, then send a written root-cause report: what is failing, the evidence, the mechanism, and the specific changes to make. It stands on its own whether or not you buy the fix.",
+          "price_inr": 4500,
+          "price_usd": 55,
+          "days": 2
+        },
+        {
+          "name": "Standard — Implementation",
+          "scope": "We build the fix: the MAVLink bridge, the ROS 2 nodes, the control loop, the SLAM configuration or the perception pipeline, with tests, a README and a recorded walkthrough of the architecture.",
+          "price_inr": 18000,
+          "price_usd": 220,
+          "days": 7
+        },
+        {
+          "name": "Premium — Integrated system",
+          "scope": "Everything in Standard plus integration into your existing stack, TF and topic plumbing, a SITL or log-replay test setup, and 14 days of support while you run it on your own hardware.",
+          "price_inr": 45000,
+          "price_usd": 550,
+          "days": 14
+        }
+      ]
+    },
+    {
+      "slug": "simulation-testing",
+      "title": "Simulation & automated robot testing",
+      "hook": "Test the robot before it exists in metal, and catch the regression before it reaches the field.",
+      "problem": "You cannot fly a prototype fifty times to check that a change did not break the geofence, and you cannot ask a human to watch the same manoeuvre every sprint. Meanwhile the simulation you have takes an afternoon to launch, only one person on the team can run it, and it does not tell you pass or fail — it just draws a robot moving. So changes ship on the strength of somebody's memory of how it looked last time.",
+      "deliverables": [
+        "Gazebo, Isaac Sim or AirSim world with the sensors, physics and vehicle model your robot actually has",
+        "One-command launch: simulator, bridge, robot description, RViz and the stack, reproducible on a clean machine",
+        "PX4 or ArduPilot SITL integration with the port layout documented, so MAVROS and a ground station stop fighting over one UDP port",
+        "Scenario-driven regression suite: declarative scenarios, seeded determinism, and pass/fail assertions over the recorded run",
+        "CI-friendly runner with machine-readable results, so a behavioural regression fails a build instead of surprising a pilot",
+        "Written notes on what the simulation does and does not model, so nobody over-trusts it"
+      ],
+      "stack": [
+        "Gazebo",
+        "Isaac Sim",
+        "AirSim",
+        "PX4 SITL",
+        "ROS 2",
+        "RViz2",
+        "Python",
+        "pytest",
+        "YAML"
+      ],
+      "tiers": [
+        {
+          "name": "Basic — Sim review & test plan",
+          "scope": "We review your current simulation setup or robot description and send a written report: what is missing, what is wrong, which behaviours are worth asserting, and the scenario list we would build first.",
+          "price_inr": 3500,
+          "price_usd": 45,
+          "days": 2
+        },
+        {
+          "name": "Standard — Working simulation",
+          "scope": "A launchable simulation of your robot with sensors and world, plus a first scenario suite with real pass/fail assertions and a report you can read after every run.",
+          "price_inr": 15000,
+          "price_usd": 185,
+          "days": 7
+        },
+        {
+          "name": "Premium — Regression harness in CI",
+          "scope": "Everything in Standard plus a scenario library covering your failure cases, deterministic seeded runs, CI integration with machine-readable output, and 14 days of support while your team writes their own scenarios.",
+          "price_inr": 40000,
+          "price_usd": 500,
+          "days": 14
+        }
+      ]
+    },
+    {
+      "slug": "automation-ai",
+      "title": "Automation & AI systems",
+      "hook": "Remove the manual step: plant-floor data acquisition, workflow engines, and assistants that answer from your documents instead of guessing.",
+      "problem": "Somebody on your team copies numbers off an HMI into a spreadsheet every shift. A nightly job fails at step nine and the only recovery is to run all nine again. Support answers the same forty questions every week, and the chatbot you tried made up an answer with total confidence. All three are the same problem: work a machine should be doing, done by a person, because the reliable version was harder to build than the demo.",
+      "deliverables": [
+        "Industrial acquisition over Modbus TCP/RTU or OPC-UA with a validated tag database, quality flags, alarms with hysteresis, a compressing historian and a live dashboard",
+        "DAG workflow engine or pipeline: dependency ordering, parallelism, retries that distinguish transient from permanent failures, idempotency keys and resumable runs",
+        "Retrieval-grounded FAQ assistant over your own documents, with citations on every claim and an explicit refusal when retrieval is weak",
+        "Evaluation harness with a labelled question set, so answer quality is a number you can watch rather than an impression",
+        "Connectors to the systems you already run: HTTP, filesystem, SQL, message queues, spreadsheets",
+        "Deployment notes, configuration reference, and a runbook for the failures that will happen anyway"
+      ],
+      "stack": [
+        "Python",
+        "Modbus TCP/RTU",
+        "OPC-UA",
+        "MQTT",
+        "SQLite",
+        "RAG",
+        "BM25",
+        "vector search",
+        "LLM APIs",
+        "FastAPI",
+        "pytest",
+        "Docker"
+      ],
+      "tiers": [
+        {
+          "name": "Basic — Scoping & feasibility",
+          "scope": "We map the process or the corpus, then send a written report: what can be automated, what should not be, the integration points and their risks, and a phased build plan with effort estimates.",
+          "price_inr": 4000,
+          "price_usd": 50,
+          "days": 2
+        },
+        {
+          "name": "Standard — Working system",
+          "scope": "Implementation of one automation: the acquisition and dashboard, the workflow with retries and resumability, or the grounded assistant with its eval harness. Delivered with tests, configuration files and a README.",
+          "price_inr": 16000,
+          "price_usd": 200,
+          "days": 8
+        },
+        {
+          "name": "Premium — Integrated & supported",
+          "scope": "Everything in Standard plus connectors into your existing systems, alerting, a deployment setup, an eval or acceptance suite you can rerun, and 14 days of support after handover.",
+          "price_inr": 42000,
+          "price_usd": 520,
+          "days": 16
+        }
+      ]
+    },
+    {
+      "slug": "product",
+      "title": "Web & mobile product engineering",
+      "hook": "Dashboards and mobile apps for machines in the field, written by the same people who write the real-time code underneath.",
+      "problem": "Your operators watch a fleet through a terminal, or through a dashboard that redraws every chart on every telemetry tick and locks up at twenty vehicles. The mobile app someone built streams telemetry fine on wifi and falls apart on a field LTE connection. The people who wrote the UI had never seen a serial link drop, so the interface has no idea what to show when the data is stale rather than absent — and that distinction is the whole job.",
+      "deliverables": [
+        "Web dashboard in React and TypeScript: live telemetry, map or plan view, per-vehicle detail, trend charts backed by fixed-capacity ring buffers rather than growing arrays",
+        "Alert engine derived from telemetry rather than scripted, with severity, latching, acknowledgement and de-duplication",
+        "Mobile app in React Native and Expo for telemetry and mission monitoring, designed for an intermittent link",
+        "Typed domain model shared across the app so the UI cannot render a field the telemetry stream does not carry",
+        "Deterministic simulated backend, so the interface can be developed, demoed and tested with no hardware attached",
+        "Unit tests over the state logic, a build pipeline, and handover notes on how to point it at your real data source"
+      ],
+      "stack": [
+        "TypeScript",
+        "React",
+        "React Native",
+        "Expo",
+        "Vite",
+        "Tailwind CSS",
+        "Node.js",
+        "Vitest",
+        "WebSocket",
+        "MQTT",
+        "SQLite"
+      ],
+      "tiers": [
+        {
+          "name": "Basic — Product scoping",
+          "scope": "We review your data source, users and constraints, then send a written scope: screen inventory, the domain model, the state and update strategy, the risks, and a phased build plan with effort estimates.",
+          "price_inr": 5000,
+          "price_usd": 60,
+          "days": 3
+        },
+        {
+          "name": "Standard — Working application",
+          "scope": "A working web dashboard or mobile app against a simulated or real data source: core screens, live updates, alerting, typed domain model, tests over the state logic, and a build you can deploy.",
+          "price_inr": 20000,
+          "price_usd": 250,
+          "days": 12
+        },
+        {
+          "name": "Premium — Integrated product",
+          "scope": "Everything in Standard plus integration with your live backend, authentication, offline and reconnect handling, deployment or store-build setup, and 21 days of support after handover.",
+          "price_inr": 50000,
+          "price_usd": 600,
+          "days": 21
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "slug": "px4-mavlink-companion",
+      "name": "px4-mavlink-companion",
+      "category": "Robotics & control",
+      "tagline": "MAVLink plumbing between a flight controller and a companion computer, with the failure modes handled.",
+      "description": "A Python package and CLI diagnostic that connects to PX4 or ArduPilot over serial, UDP or TCP and exposes telemetry, rate control and offboard setpoints. The problem it targets is telemetry that is present but wrong: a heartbeat check tells you the link is up, not that ATTITUDE has been arriving at a perfect 10 Hz with a timestamp that stopped advancing when the autopilot browned out. The watchdog separates a dead link, a dead stream, a stream that never started, frozen contents, a backwards clock and an autopilot reboot into six distinct events, because each needs a different fix. Everything that does not touch hardware runs and is unit-tested with pymavlink not installed.",
+      "highlights": [
+        "Six distinguishable staleness failures — LINK_DOWN, STREAM_STALE, STREAM_MISSING, TIMESTAMP_FROZEN, TIMESTAMP_BACKWARDS, AUTOPILOT_REBOOT — instead of one boolean",
+        "Serial discovery through /dev/serial/by-id with deterministic ranking, because /dev/ttyACM0 is assigned in USB enumeration order and changes under you",
+        "Offboard engage that streams setpoints before requesting the mode, plus a deadman that raises instead of letting a stalled loop re-send a stale command",
+        "Bandwidth estimator that models 8N1 overhead and the MAVLink 2 frame, so you find out at design time that ATTITUDE at 50 Hz does not fit on a 57600 radio",
+        "169 offline tests plus 9 that check every hardcoded wire constant against the generated dialect when pymavlink is installed"
+      ],
+      "stack": [
+        "Python",
+        "MAVLink",
+        "pymavlink",
+        "PX4",
+        "ArduPilot",
+        "pyserial",
+        "UDP"
+      ],
+      "repo_url": "https://github.com/Pratyush150/px4-mavlink-companion",
+      "status": "active"
+    },
+    {
+      "slug": "drone-control-toolkit",
+      "name": "drone-control-toolkit",
+      "category": "Robotics & control",
+      "tagline": "PID, cascade, LQR, attitude estimation and motor mixing, with the parts that decide whether they fly.",
+      "description": "A control and estimation library for small unmanned aircraft, written so every non-obvious line traces back to a failure mode on real hardware. It covers PID with anti-windup, derivative-on-measurement, D-term filtering, feed-forward and bumpless transfer; the position to velocity to attitude to rate cascade with limits between loops in engineering units; discrete infinite-horizon LQR solved by Riccati iteration with no scipy dependency; complementary, Madgwick and Kalman filters plus a quaternion-and-gyro-bias attitude EKF with NIS diagnostics; motor mixing with attitude-priority desaturation; and minimum-jerk and trapezoidal trajectory generation. The simulation harness injects the defects that actually break a tune — actuator latency, motor time constant, command quantisation, gyro noise on a walking bias — so a controller is exercised against the plant plus its imperfections rather than clean algebra.",
+      "highlights": [
+        "Motor mixer gives up thrust to keep attitude when the demand does not fit in [idle, 1], because a multirotor that loses attitude authority flips and does not recover",
+        "Attitude EKF estimates gyro bias as part of the state and carries a covariance, so it can down-weight the accelerometer during manoeuvres — Madgwick's beta fights bias but never learns it",
+        "LQR Riccati recursion written from scratch: no scipy on a Jetson image, and you can watch the residual converge",
+        "Hardware-realism injectors — latency, motor lag, ESC quantisation, gyro noise and bias walk — so the sim reproduces why a clean tune falls apart on the bench",
+        "173 deterministic tests across 11 files, numpy only, no network and no display — matplotlib is imported lazily by the examples so the library runs headless"
+      ],
+      "stack": [
+        "Python",
+        "NumPy",
+        "control theory",
+        "Kalman filtering",
+        "pytest"
+      ],
+      "repo_url": "https://github.com/Pratyush150/drone-control-toolkit",
+      "status": "active"
+    },
+    {
+      "slug": "jetson-realtime-detection",
+      "name": "jetson-realtime-detection",
+      "category": "Robotics & control",
+      "tagline": "Real-time detection and tracking on boards with a thermal budget, not a workstation GPU.",
+      "description": "An edge perception pipeline for Jetson Nano, Orin Nano, Xavier NX, Raspberry Pi and Hailo-8. The hard part of edge perception is not calling a detector; it is not falling seconds behind the camera, not stalling when the board heats up, and getting a useful output rate out of hardware that cannot run the model on every frame. A reader thread drains the driver queue into a one-deep latest-frame slot so latency stops growing without bound, adaptive frame skipping amortises inference across frames the tracker carries, and a backend registry probes the board at runtime and logs why it chose what it chose. torch, cv2, onnxruntime, tensorrt, hailo_platform and rclpy are all optional and guarded; 187 tests run offline with none of them.",
+      "highlights": [
+        "One-deep latest-frame buffer with drop counters — a demo script's latency grows without bound because cv2.VideoCapture hands you the oldest queued frame, and no model optimisation fixes that",
+        "Adaptive frame skipping solved from measured timings: N >= inference / (1/target_fps - overhead), turning a 10 FPS detector into a 30 FPS output stream",
+        "SORT tracker with a constant-velocity Kalman filter and Hungarian assignment implemented from scratch — greedy IoU matching lets two crossing objects swap identities, optimal assignment does not",
+        "Per-stage p50/p90/p99 timing rather than mean FPS, because the tail is what a human sees as stutter and what a control loop sees as a hole",
+        "Backend registry that states its choice out loud, because a silent fallback to CPU is how a robot ends up at 4 FPS while everyone insists the GPU path is on"
+      ],
+      "stack": [
+        "Python",
+        "NumPy",
+        "YOLO",
+        "TensorRT",
+        "ONNX Runtime",
+        "Hailo",
+        "OpenCV",
+        "ROS 2"
+      ],
+      "repo_url": "https://github.com/Pratyush150/jetson-realtime-detection",
+      "status": "active"
+    },
+    {
+      "slug": "flight-log-analyzer",
+      "name": "flight-log-analyzer",
+      "category": "Robotics & control",
+      "tagline": "\"The drone flew badly. Why?\" — answered from the log, with the evidence attached.",
+      "description": "A log-analysis library and CLI that reads PX4 ULog, ArduPilot dataflash and CSV exports, runs six analyzers over a normalised set of SI-unit time series, and produces a ranked findings report. Each finding carries the measurement that triggered it, the mechanism in plain English, and a concrete change to make. It is built on one opinion: most flight problems are misattributed, so findings are ranked cause before symptom — vibration and power appear ahead of the estimator and controller symptoms they produce. Reports render to terminal, JSON, and a self-contained HTML file with inline SVG plots and no external references, so it opens on a field laptop with no internet.",
+      "highlights": [
+        "Welch PSD implemented on bare numpy with resampling onto a uniform grid using the median interval — flight logs are not uniformly sampled, and an FFT of jittery timestamps gives smeared, wrong peak frequencies",
+        "Oscillation frequency mapped to the specific gain that is too high, with the PX4 and ArduPilot parameter names printed",
+        "Pack internal resistance fitted from V against I with the state-of-charge trend removed, then converted to a per-cell brownout risk",
+        "Accelerometer clipping detected and explained: a clipped waveform is asymmetric, so its mean is no longer zero and the estimator receives a constant false acceleration",
+        "169 tests that assert detection against injected ground truth — a 92 Hz tone must be found within 2 Hz, 48 milliohms recovered within 20 percent, and a clean synthetic flight must produce zero warnings"
+      ],
+      "stack": [
+        "Python",
+        "NumPy",
+        "pyulog",
+        "pymavlink",
+        "ULog",
+        "dataflash",
+        "SVG"
+      ],
+      "repo_url": "https://github.com/Pratyush150/flight-log-analyzer",
+      "status": "active"
+    },
+    {
+      "slug": "lidar-slam-toolkit",
+      "name": "lidar-slam-toolkit",
+      "category": "Robotics & control",
+      "tagline": "SLAM rarely fails because the algorithm is wrong. This finds the reason it actually failed.",
+      "description": "Diagnostics and reference configurations for LIO-SAM, Cartographer and RTAB-Map, built to answer \"why does the map drift\" offline from a laptop rather than by tuning parameters at random. It validates the four classic LiDAR-to-IMU extrinsic mistakes, recovers time-sync offset, drift and jitter, decomposes z-drift into ramp and step components, measures loop-closure residual and revisit consistency without ground truth, and runs an eigen-analysis of the surface-normal distribution to say which axis the solver is free to slide along. Every diagnostic returns findings carrying a stable code, the measurement, what the defect looks like in RViz, and the concrete edit to make — never a bare boolean. Nothing here needs PCL, Open3D or ROS.",
+      "highlights": [
+        "Degeneracy detection from the eigenvalues of the summed surface-normal outer products: in a straight corridor nothing constrains the along-corridor axis, so the solver slides and no amount of tuning stops it",
+        "Extrinsics validation for the four failures that survive review — transposed rotation, swapped translation frame, degrees-versus-radians, and axis-convention mismatch",
+        "Time-sync analysis grounded in the actual error model: angular error scales with omega times dt, position error with v times dt plus omega times dt times range",
+        "z-drift split into ramp and step, then tested for whether the ramp tracks time or distance travelled — that is what separates gravity misalignment, accelerometer bias and a z clamp, and they need three different fixes",
+        "205 tests against synthetic scenes ray-cast from real planar geometry with injected defects, so the tests assert recovery of known ground truth"
+      ],
+      "stack": [
+        "Python",
+        "NumPy",
+        "ROS 2",
+        "LIO-SAM",
+        "Cartographer",
+        "RTAB-Map",
+        "rosbag2"
+      ],
+      "repo_url": "https://github.com/Pratyush150/lidar-slam-toolkit",
+      "status": "active"
+    },
+    {
+      "slug": "ros2-diffdrive-robot",
+      "name": "ros2-diffdrive-robot",
+      "category": "Robotics & control",
+      "tagline": "The whole path from a velocity command to a turning wheel and back to a measured speed.",
+      "description": "A ROS 2 differential-drive robot workspace: a Xacro description split into chassis, wheels, LiDAR, camera and the Gazebo diff-drive plugin; a launch file that brings up robot_state_publisher, gzserver and gzclient and spawns the robot from /robot_description after the server is ready; and a serial motor driver node that talks to a microcontroller and reads encoders back. The driver exposes open-loop PWM for wiring and direction checks, and a closed-loop mode commanding rad/s with the microcontroller running the wheel PID. Inertial macros compute real inertia tensors from mass and geometry rather than leaving placeholders, so the model does not misbehave the moment physics is enabled.",
+      "highlights": [
+        "Serial access is mutex-guarded because the command callback and the encoder read timer run on different threads, and interleaved writes on a serial line produce corrupted frames that are miserable to debug",
+        "Spawn is delayed until gzserver is up — not elegance, the fix for a race that otherwise fails intermittently",
+        "encoder_cpr is called out as the parameter that silently scales every reported velocity by a constant factor when it is wrong",
+        "Both control modes on one interface: raw PWM to check wiring and direction, closed-loop rad/s once you trust it",
+        "Real inertia tensors from an inertia macro, so links do not fall through the world or spin to infinity on spawn"
+      ],
+      "stack": [
+        "ROS 2",
+        "Gazebo",
+        "Xacro",
+        "URDF",
+        "Python",
+        "pyserial",
+        "Arduino"
+      ],
+      "repo_url": "https://github.com/Pratyush150/ros2-diffdrive-robot",
+      "status": "active",
+      "attribution": "The vendored serial_motor_demo package is adapted from Josh Newans' Articulated Robotics project and is used under the BSD 3-Clause licence. The workspace is a learning-derived reference implementation of the full command-to-encoder loop, not original system design."
+    },
+    {
+      "slug": "robot-description-urdf-xacro",
+      "name": "robot-description-urdf-xacro",
+      "category": "Robotics & control",
+      "tagline": "The same robot written twice — plain URDF and Xacro — so the difference is visible, not described.",
+      "description": "A reference repository containing one differential-drive mobile robot described in longhand URDF and again in Xacro, side by side. The URDF version is visual only, with no inertial or collision elements: it displays correctly in RViz and behaves badly or not at all in Gazebo, which is the point of the comparison and one of the most common reasons a robot spawns and falls through the world. The Xacro version parameterises dimensions as properties and computes inertia tensors from mass and geometry with a macro. The known remaining problems — left and right components still duplicated instead of factored into a reflect macro, upper-body joints all fixed — are left in place and documented, because that half-finished state is where most real Xacro files sit.",
+      "highlights": [
+        "Shows the missing-inertial failure directly rather than warning about it: same robot, one version renders and the other simulates",
+        "Inertia macro computes real tensors from mass and dimensions instead of leaving placeholder numbers",
+        "Parameterised chassis dimensions, so a size change is one edit instead of six",
+        "Its own unfinished parts are documented as the failure modes worth recognising, including the missing wheel reflect macro"
+      ],
+      "stack": [
+        "URDF",
+        "Xacro",
+        "ROS 2",
+        "RViz2",
+        "Gazebo"
+      ],
+      "repo_url": "https://github.com/Pratyush150/robot-description-urdf-xacro",
+      "status": "reference"
+    },
+    {
+      "slug": "cpp-for-robotics",
+      "name": "cpp-for-robotics",
+      "category": "Robotics & control",
+      "tagline": "C++ fundamentals taught against the situations the syntax is actually for in robotics code.",
+      "description": "Short, self-contained C++ programs covering language fundamentals through robotics examples: parsing a command string off a serial line with getline and stringstream, handling a sensor that returns garbage in a try/catch path, passing robot state around by reference instead of copying it, printing telemetry at fixed precision so logs are readable, and a basic Eigen vector example as the entry point to linear algebra in control code. One concept per file, each compiling on its own with a single g++ command. It is public because the examples are clear, and it is labelled a learning repository rather than dressed up as a library.",
+      "highlights": [
+        "Robotics context instead of Animal classes: the same language features, attached to code you will meet again",
+        "One concept per file, each buildable with a single g++ invocation and no build system",
+        "Covers the specific things that bite in embedded C++: stream precision, type casting, const correctness, object lifetime",
+        "Honestly scoped — nothing here is meant to be linked into a project"
+      ],
+      "stack": [
+        "C++",
+        "Eigen",
+        "g++"
+      ],
+      "repo_url": "https://github.com/Pratyush150/cpp-for-robotics",
+      "status": "reference"
+    },
+    {
+      "slug": "ros2-drone-bringup",
+      "name": "ros2-drone-bringup",
+      "category": "Simulation & testing",
+      "tagline": "ROS 2 Humble bringup for a PX4 or ArduPilot multirotor, with PX4 SITL and Gazebo launch files.",
+      "description": "A ROS 2 package providing MAVROS telemetry normalisation, preflight gating, a predictive geofence, a guarded mission-executor state machine, and launch files for PX4 SITL plus Gazebo, hardware, and mission-only operation. It exists because standing up a ROS 2 drone stack is not hard for algorithmic reasons — it is hard because of QoS mismatches that produce a topic publishing into silence, ENU/FLU versus NED/FRD conversions applied by halves, and three different altitude datums in one config. Every line of flight logic lives in drone_bringup/core, which imports no ROS at all; that is enforced by a test, so the geodesy, mission format, geofence and state machine are unit-tested on a machine with no ROS installation. 528 test cases across 8 files run under plain pytest.",
+      "highlights": [
+        "Geofence reports time to breach, not inside/outside — a 15 m/s multirotor decelerating at 3 m/s squared needs 5 seconds and 37 metres to stop, so a binary check fires when it is already too late",
+        "Guarded state machine with abort paths from every state: illegal transitions are rejected rather than applied, replacing the pile of booleans that works until MAVROS delivers messages in an order nobody considered",
+        "Real scanline polygon fill for lawnmower surveys, handling concave polygons so a U-shaped field produces two segments per scan rather than one line through the notch, with coverage tested against sampled interior points",
+        "core/ imports no ROS, enforced by a test — the flight logic is reviewable and testable in isolation",
+        "QoS profiles shared in one module with a mismatch explainer, because a RELIABLE subscriber never connects to a BEST_EFFORT publisher and nothing anywhere reports an error"
+      ],
+      "stack": [
+        "ROS 2 Humble",
+        "MAVROS",
+        "PX4 SITL",
+        "Gazebo",
+        "Python",
+        "rclpy",
+        "RViz2",
+        "YAML"
+      ],
+      "repo_url": "https://github.com/Pratyush150/ros2-drone-bringup",
+      "status": "active"
+    },
+    {
+      "slug": "robot-sim-test-harness",
+      "name": "robot-sim-test-harness",
+      "category": "Simulation & testing",
+      "tagline": "Scenario-driven regression testing for robot behaviour: assert what the robot must and must not do, and fail the build when a change breaks it.",
+      "description": "Launching a simulator is the easy part, and every tutorial ends there. This is the missing half: a declarative YAML scenario format covering world, spawn, goal, static and moving obstacles, sensor noise and dropout, wind and gusts, a time limit and the assertions that decide pass or fail. Runs are deterministically seeded and fixed-step, producing a trace of 21 fields per timestep that every assertion, report and diff reads — so the same seed gives a byte-identical trace, and there is a test for that. It ships a real headless simulator with differential-drive and quadrotor kinematics, first-order actuator lag, relative-airspeed wind drag and a sensor model, and puts Gazebo, AirSim and Isaac Sim behind one six-method interface. 299 test cases run offline with PyYAML as the only runtime dependency.",
+      "highlights": [
+        "Temporal assertion operators — always, eventually, eventually always, A until B — with the finite-trace semantics written down, alongside clearance, geofence, jerk limits, path-length ratio, settling time, overshoot and oscillation frequency. Every result carries the worst-case value, the timestamp and a sentence",
+        "Failure-boundary bisection turns \"it worked once\" into \"it holds to 7.79 m/s of crosswind and fails past 7.82\", with grid and Monte Carlo sweeps over initial conditions, noise seeds, wind and gains",
+        "Trace diffing reports the first divergent timestep, the field and both values, so a regression is localised instead of argued about",
+        "Scenarios compose through extends: with a deep merge, and validation errors name the offending key — obstacles[2].radius — with a spelling suggestion, rather than raising KeyError",
+        "PyYAML is the only runtime dependency: no numpy, no matplotlib, no plotting library and no CDN, so it installs and runs in a bare CI container in seconds and the HTML report is one self-contained file of hand-generated SVG"
+      ],
+      "stack": [
+        "Python",
+        "PyYAML",
+        "Gazebo",
+        "AirSim",
+        "Isaac Sim",
+        "JUnit XML",
+        "pytest"
+      ],
+      "repo_url": "https://github.com/Pratyush150/robot-sim-test-harness",
+      "status": "active"
+    },
+    {
+      "slug": "llm-faq-assistant",
+      "name": "llm-faq-assistant",
+      "category": "Automation & AI",
+      "tagline": "A FAQ assistant for your own documents that says \"I don't know\" when it does not know — and measures how often it is right.",
+      "description": "A retrieval-grounded question-answering system built around the four things that actually break a support bot: chunking that splits an answer away from its question, embeddings that miss exact identifiers like NW-FILT-02, no refusal path because top_k always returns k results, and nothing measured. It does structure-aware chunking that treats a question heading plus its answer as an atomic block, hybrid dense plus BM25 retrieval fused by reciprocal rank fusion, an explainable reranker with a per-feature score breakdown, four named refusal guardrails, an answer-grounding check where every claim sentence must be supported by a single cited chunk, and an eval harness reporting recall@k, MRR, groundedness, citation precision and refusal correctness in both directions. It runs end to end with no API key, no network and no dependencies beyond the standard library; 197 tests pass offline.",
+      "highlights": [
+        "Hybrid retrieval fused with Reciprocal Rank Fusion on ranks rather than scores, so dense and BM25 need no score calibration between them — dense finds paraphrase, BM25 finds the part number a customer types when something is broken",
+        "Refusal is a first-class outcome with four independent guardrails — retrieval confidence, out-of-domain, ambiguity, source contradiction — each returning a named reason a caller can branch on, not a magic string buried in the answer text",
+        "Retrieved content is treated as data, never instructions: injection detection, paragraph-level neutralisation and structural delimiting, so a document saying \"ignore previous instructions\" is neither obeyed nor quoted",
+        "The eval harness changed the design rather than decorating it — a reranker feature that measured worse ships with weight zero, and the retrieval prior was switched from a min-max score to a reciprocal rank after the breakdown showed a meaningless gap being inflated into a full point",
+        "Structure-aware chunking keeps the heading path as breadcrumb metadata and never splits a question from its answer; on the bundled goldset a fixed 120-token window leaves recall almost unchanged while citation precision falls from 0.867 to 0.537, which is why recall-only evaluation is misleading"
+      ],
+      "stack": [
+        "Python",
+        "stdlib only",
+        "RAG",
+        "BM25",
+        "RRF",
+        "vector search",
+        "LLM APIs (optional)",
+        "pytest"
+      ],
+      "repo_url": "https://github.com/Pratyush150/llm-faq-assistant",
+      "status": "active"
+    },
+    {
+      "slug": "workflow-automation-engine",
+      "name": "workflow-automation-engine",
+      "category": "Automation & AI",
+      "tagline": "A workflow engine for automation you have to operate: retries that know what is worth retrying, and runs you can resume.",
+      "description": "A DAG workflow runner (`flowforge`) for the jobs that currently live in a cron entry and a shell script. It gives you topological ordering with level grouping for parallelism, cycle errors that print the actual cycle, retry policies that separate transient from permanent failures, a circuit breaker, content-addressed idempotency keys with a pluggable store, durable run state and resume, per-task timeouts with a whole-run deadline, a timezone-aware cron parser with tested DST behaviour, and connectors for HTTP, webhooks, shell, filesystem, CSV and SMTP. Partial failure is a first-class concept: a task that raised is `failed`, one that never got the chance is `upstream_failed`, one a policy dropped is `skipped`, so an operator can tell what happened without reading the code. Stdlib only — no broker, no database, no scheduler daemon, and 171 offline tests in about three seconds.",
+      "highlights": [
+        "Retries only what can succeed later: a ValueError from a malformed row raises identically on attempt five, so a PermanentError is never retried and the message names the bad value, while a 503 is retried with jittered exponential backoff that stays deterministic under an injected RNG",
+        "Idempotency with an explicit three-state protocol — completed means reuse it, failed means safe to run again, and started means we were killed mid-flight and genuinely do not know, so you choose the policy rather than the library guessing",
+        "Resume re-runs only what did not succeed and restores upstream outputs so downstream tasks can still read them, instead of re-sending 280 invoices",
+        "Every timing decision goes through an injectable clock, so a policy that would wait 90 seconds in production is exercised in microseconds by the same code path",
+        "Observability that answers the actual question: JSON-lines logs keyed by run and task, an ASCII Gantt render, and explain_failure() naming the root-cause task and everything it blocked — instead of grepping interleaved print() output from three threads"
+      ],
+      "stack": [
+        "Python",
+        "stdlib only",
+        "DAG scheduling",
+        "cron/zoneinfo",
+        "HTTP + SMTP connectors",
+        "pytest"
+      ],
+      "repo_url": "https://github.com/Pratyush150/workflow-automation-engine",
+      "status": "active"
+    },
+    {
+      "slug": "industrial-automation-suite",
+      "name": "industrial-automation-suite",
+      "category": "Automation & AI",
+      "tagline": "Get data off your PLCs and make it visible and actionable — acquisition, alarms, a compressing historian, OEE and a dashboard.",
+      "description": "A plant-floor stack (`factorylink`) covering Modbus TCP/RTU and OPC-UA acquisition, a validated tag database, an alarm engine, a compressing historian, OEE and a live dashboard. The Modbus codec is written from first principles as pure functions over 16-bit registers and unit-tested against known byte patterns for all four word/byte order combinations, because a float that reads as -1.6e-23 raises nothing — you just get a number, and it is nonsense. Everything above the driver is protocol-agnostic, so the whole test suite and the demo run against a simulated bottling line with conveyor and thermal lag, load-dependent motor current and seven injectable faults, which renders into a real Modbus register image decoded through the real codec. pymodbus, asyncua and paho-mqtt are optional; 300 tests pass with none of them installed and PyYAML as the only runtime dependency.",
+      "highlights": [
+        "Register-range coalescing turns 38 tags into 7 requests per sweep instead of 38, never merging across devices or register areas and never exceeding the 125-register protocol limit — with the greedy merge tested against a brute-force reference for minimality",
+        "Alarms that do not flood: high/high-high/low/low-low, rate of change, deviation from setpoint and digital state, each with hysteresis, on-delay and off-delay timers, latching, bounded shelving and EEMUA-style flood detection — because one noisy motor current can otherwise put 1,800 entries in the list by lunchtime",
+        "Swinging-door compression implemented from scratch on stdlib SQLite, with the measured ratios published rather than claimed — and a tag that will not compress is itself the diagnosis that its tolerance is tighter than the instrument's real accuracy",
+        "The write path is shut by default: read-only mode, an explicit allow-list, engineering-range clamping, per-tag rate limiting, single-use confirmation tokens for critical tags, and an audit log of every attempt including the refusals",
+        "The dashboard has zero build step — stdlib HTTP server, one HTML file, trend charts as inline SVG generated server-side, no npm and no CDN — so it runs on an air-gapped box"
+      ],
+      "stack": [
+        "Python",
+        "PyYAML",
+        "Modbus TCP/RTU",
+        "OPC-UA (asyncua)",
+        "MQTT Sparkplug B",
+        "SQLite",
+        "pytest"
+      ],
+      "repo_url": "https://github.com/Pratyush150/industrial-automation-suite",
+      "status": "active"
+    },
+    {
+      "slug": "fleet-ops-dashboard",
+      "name": "fleet-ops-dashboard",
+      "category": "Product",
+      "tagline": "A browser ground station for a mixed fleet, with the telemetry simulator that makes it testable.",
+      "description": "A React and TypeScript dashboard for watching a mixed fleet of quadrotors, VTOLs and ground robots: a pan/zoom top-down map, a sortable fleet table, per-vehicle trend charts and an alert feed. It ships with the thing that normally blocks a dashboard like this from existing — a real telemetry simulator. Twelve vehicles fly generated missions inside a geofence at a fixed 0.5 s timestep with modelled battery state of charge, pack voltage sag, link RSSI with path loss and packet loss, and GNSS fix quality, and five classes of fault are injected on a seed-derived schedule. Faults go into the telemetry, not into the alert list, so the alert engine has to notice an RSSI collapse on its own, exactly as it would against a real radio.",
+      "highlights": [
+        "Alert rules are {enter, exit, enterDwell, exitDwell} with real hysteresis — low battery enters at 30 percent and exits at 33 — so a signal sitting on a threshold produces one alert rather than a hundred, and that is tested directly",
+        "The map is inline SVG with heading-oriented markers, trails and the geofence polygon: no map library, no tile server, works offline. The trend charts are polylines from a fixed-capacity rolling buffer, with no charting library",
+        "Deterministic to the byte: the same seed and tick count reproduce the same fleet, the same missions and the same fault schedule, which is what makes a UI regression a diff",
+        "A vehicle that goes unresponsive keeps its last known state and ages it, so the dashboard shows a healthy-looking 76 percent link alongside an offline status — because that stale frame really did report a healthy radio, and saying so is the whole job",
+        "Emergent behaviour rather than scripted: a scheduled single geofence fault produces three real breaches when a VTOL's turn rate overshoots a waypoint near the fence line, caught by a point-in-polygon test on a position the navigation model produced"
+      ],
+      "stack": [
+        "TypeScript",
+        "React 18",
+        "Vite 5",
+        "Tailwind CSS 3",
+        "Vitest",
+        "SVG"
+      ],
+      "repo_url": "https://github.com/Pratyush150/fleet-ops-dashboard",
+      "status": "active"
+    },
+    {
+      "slug": "ground-station-mobile",
+      "name": "ground-station-mobile",
+      "category": "Product",
+      "tagline": "A phone-sized ground-control station that decodes MAVLink itself and never shows a stale number as if it were live.",
+      "description": "A React Native and Expo ground station for the moment you are standing in a field with a transmitter in one hand and the laptop is in the car. It decodes MAVLink v1 and v2 directly from a byte stream and shows a flight display, the mission, and alerts that do not chatter. Desktop ground stations are excellent and enormous; the phone apps that exist are usually remote viewers or vendor-locked, and nearly all of them share one dangerous habit — when telemetry stops arriving they keep showing the last value in the same colour, as though it were live. Everything under src/core is plain TypeScript with no React Native imports, so the telemetry logic, its 131 tests and a full simulated flight run without the mobile toolchain.",
+      "highlights": [
+        "MAVLink v1 and v2 decoded from a raw byte stream with CRC-16/MCRF4XX validation including CRC_EXTRA, sequence-gap accounting, resynchronisation after garbage, and correct handling of frames split across reads",
+        "Every telemetry group ages independently — attitude, position, battery, GPS, air data and heartbeat each carry their own staleness budget — and stale values render greyed, hatched and dashed rather than as live numbers",
+        "Flight modes decoded for both stacks: PX4 packs main and sub mode into custom_mode, ArduPilot uses a flat number meaning different things on copter and plane",
+        "Alerts with hysteresis and on-delay for low and critical battery, link loss, degraded GPS, geofence breach and stale telemetry, each with an explicit set and clear condition so none can oscillate on a threshold",
+        "Runs with no aircraft: a deterministic demo link synthesises arm, takeoff, a four-waypoint box, RTL and land as real MAVLink frames, with injectable link dropout, CRC corruption, GPS degradation and accelerated battery drain"
+      ],
+      "stack": [
+        "TypeScript",
+        "React Native 0.74",
+        "Expo SDK 51",
+        "MAVLink v1/v2",
+        "Vitest",
+        "UDP/TCP/serial"
+      ],
+      "repo_url": "https://github.com/Pratyush150/ground-station-mobile",
+      "status": "active"
+    }
+  ],
+  "skills": [
+    {
+      "group": "Flight stacks",
+      "items": [
+        "PX4",
+        "ArduPilot",
+        "Betaflight",
+        "MAVLink",
+        "MAVSDK",
+        "pymavlink",
+        "MAVROS",
+        "ULog",
+        "dataflash logs",
+        "QGroundControl",
+        "Mission Planner"
+      ]
+    },
+    {
+      "group": "Robotics middleware",
+      "items": [
+        "ROS 2",
+        "rclpy",
+        "rclcpp",
+        "ros2_control",
+        "TF2",
+        "URDF",
+        "Xacro",
+        "colcon",
+        "launch files",
+        "rosbag2"
+      ]
+    },
+    {
+      "group": "Perception",
+      "items": [
+        "YOLO",
+        "TensorRT",
+        "ONNX Runtime",
+        "Hailo",
+        "OpenCV",
+        "multi-object tracking",
+        "SORT",
+        "Hungarian assignment",
+        "camera calibration"
+      ]
+    },
+    {
+      "group": "SLAM & navigation",
+      "items": [
+        "LIO-SAM",
+        "Cartographer",
+        "RTAB-Map",
+        "point cloud processing",
+        "sensor extrinsics",
+        "time synchronisation",
+        "degeneracy analysis",
+        "Nav2"
+      ]
+    },
+    {
+      "group": "Control & estimation",
+      "items": [
+        "PID with anti-windup",
+        "cascaded control",
+        "LQR",
+        "Kalman and extended Kalman filters",
+        "complementary filters",
+        "Madgwick",
+        "motor mixing",
+        "trajectory generation",
+        "system identification"
+      ]
+    },
+    {
+      "group": "Simulation & testing",
+      "items": [
+        "Gazebo",
+        "PX4 SITL",
+        "AirSim",
+        "Isaac Sim",
+        "RViz2",
+        "hardware-in-the-loop",
+        "scenario-driven regression testing",
+        "pytest",
+        "deterministic seeded simulation"
+      ]
+    },
+    {
+      "group": "Industrial automation",
+      "items": [
+        "Modbus TCP",
+        "Modbus RTU",
+        "OPC-UA",
+        "MQTT",
+        "PLC integration",
+        "tag databases",
+        "alarm management",
+        "historians",
+        "OEE",
+        "SCADA dashboards"
+      ]
+    },
+    {
+      "group": "Automation & AI",
+      "items": [
+        "RAG",
+        "hybrid retrieval",
+        "BM25",
+        "vector search",
+        "embeddings",
+        "LLM APIs",
+        "evaluation harnesses",
+        "DAG workflow orchestration",
+        "retries and idempotency",
+        "connector design"
+      ]
+    },
+    {
+      "group": "Web & mobile",
+      "items": [
+        "TypeScript",
+        "React",
+        "React Native",
+        "Expo",
+        "Vite",
+        "Tailwind CSS",
+        "Node.js",
+        "Vitest",
+        "REST",
+        "WebSocket",
+        "SQLite"
+      ]
+    },
+    {
+      "group": "Languages & tooling",
+      "items": [
+        "Python",
+        "C++",
+        "TypeScript",
+        "NumPy",
+        "Eigen",
+        "CMake",
+        "pytest",
+        "Git",
+        "Linux",
+        "Docker"
+      ]
+    },
+    {
+      "group": "Boards we write for",
+      "items": [
+        "NVIDIA Jetson",
+        "Raspberry Pi",
+        "Hailo-8",
+        "STM32",
+        "Pixhawk",
+        "Arduino",
+        "serial and UART links",
+        "LiDAR",
+        "IMU integration",
+        "encoders"
+      ]
+    }
+  ],
+  "process": [
+    {
+      "step": 1,
+      "title": "Tell us what is going wrong",
+      "detail": "Describe the machine or the process, the versions, and send whatever evidence you have — a log, a bag file, a register map, a screenshot of the failure, a document corpus. We will tell you within a working day whether this is something we can fix and roughly what it takes."
+    },
+    {
+      "step": 2,
+      "title": "Paid diagnosis or scoping first",
+      "detail": "We analyse the evidence and send a written report: what is actually failing, the reasoning behind that conclusion, what we ruled out, and the specific changes we would make. It is a fixed low price and it stands on its own. If you take the report and do the work in-house, that is a fine outcome."
+    },
+    {
+      "step": 3,
+      "title": "Implementation with visible progress",
+      "detail": "If you want it built, we scope it against the report and work in visible increments. You get running code, not a status update. Scope changes get flagged when we find them, not at delivery."
+    },
+    {
+      "step": 4,
+      "title": "Handover you can maintain",
+      "detail": "Code with comments and tests, a README that explains how to run it, and a recorded walkthrough of the architecture and the parameters worth touching. On Premium engagements we stay available while you run it on your own hardware or put it in front of real users."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why do you charge for a diagnosis instead of quoting for free?",
+      "a": "Because the diagnosis is the hard part. Reading a log, a bag file or an address map properly takes hours and produces something you can act on regardless of who does the fix. A free quote would either be guesswork or unpaid work. The diagnosis fee is low and we credit it against implementation if you go ahead."
+    },
+    {
+      "q": "You cover robotics, automation, AI and apps. Is that not too broad?",
+      "a": "They are the same job at different layers. A fleet dashboard is only useful if someone understands what the telemetry means and when it is stale. A plant-floor historian is only useful if someone knows why a Modbus register decoded backwards. We work across the stack because the seams between those layers are where projects break, and they are nobody's job when three vendors own three layers."
+    },
+    {
+      "q": "Do you need our hardware shipped to you?",
+      "a": "No, and we never will. We write software only — including the firmware, drivers and embedded C++ that run on boards you already own — so we work from logs, bag files, register dumps, packet captures, parameter files and photos of your setup, plus simulators and synthetic data with injected defects that exercise the code before it meets your machine. What we do not do is build, wire, assemble or repair hardware, or design PCBs and mechanics. If a job needs that, we say so at the first message rather than at delivery."
+    },
+    {
+      "q": "PX4 or ArduPilot?",
+      "a": "Both. They differ in log format, parameter naming, MAVLink dialect details and offboard behaviour, and we work across all of that. On ArduPilot, custom_mode is a flat table that differs between copter, plane and rover; on PX4 it is a packed bitfield. Knowing that difference is roughly the job."
+    },
+    {
+      "q": "My SLAM map drifts in z. Is that a parameter problem?",
+      "a": "Almost never. It is usually IMU-to-LiDAR extrinsics, a timestamp offset between two clocks, or geometric degeneracy in the environment. Tuning on top of a bad extrinsic just moves the error around. That is exactly why diagnosis comes first."
+    },
+    {
+      "q": "Will an AI assistant over our documents just make things up?",
+      "a": "That is the default failure, and it is a design problem rather than a model problem. We build retrieval-grounded systems: every claim carries a citation to the chunk it came from, retrieval is hybrid so exact part numbers and paraphrased concepts both work, and the system refuses when retrieval is weak instead of filling the gap. Then we ship an eval harness over a labelled question set so quality is a number you can watch."
+    },
+    {
+      "q": "Can you connect to our PLCs without disrupting the line?",
+      "a": "Read-only acquisition over Modbus TCP/RTU or OPC-UA is normally straightforward, and we scope polling rates and register coalescing so the load on the device is predictable. Anything that writes to a live process gets discussed explicitly, staged, and tested against a simulator first. We will tell you when something should stay a manual step."
+    },
+    {
+      "q": "Will you sign an NDA?",
+      "a": "Yes. We also do not reuse client code, data or logs in public repositories. Everything on our GitHub is written from scratch and is ours to publish."
+    },
+    {
+      "q": "What do you need from us to start?",
+      "a": "For robotics: the flight stack and firmware version, the compute and how it is wired, the sensors, and the raw evidence — ULog or dataflash log, ROS 2 bag, or a video with a timestamp. For automation: the device list, the register or node map, and what the manual process currently is. For AI: a sample of the corpus and twenty real questions with the answers you would accept. For product: the data source and who uses the screen."
+    },
+    {
+      "q": "Do you take full builds or only fixes?",
+      "a": "Both, but we prefer to start small. A diagnosis or a single-component build tells you whether we work well together before either side commits to a long engagement. Larger builds are scoped in phases with a working deliverable at the end of each one."
+    }
+  ],
+  "contact": {
+    "headline": "Tell us what is failing",
+    "blurb": "Describe the machine or the process, the versions, and send the evidence. We reply within one working day with an honest answer about whether we can help and what it would cost. If it is not something we can do well, we will say so.",
+    "note": "Best first message: what the system is, what it does wrong, when it started, and a link to a log, a bag file, a register map or a document sample. That gets you a useful answer instead of a scheduling email."
+  },
+  "about": {
+    "heading": "About us",
+    "bio": [
+      "We are an engineering studio working across four lines: robotics and control, simulation and testing, automation and AI, and product. They are the same job at different layers, and the seams between them are where projects usually break — which is why we would rather own more than one of them.",
+      "On the robotics side that means ROS 2, PX4 and ArduPilot autonomy, MAVLink integration, LiDAR SLAM, control and state estimation, and real-time perception on Jetson and Raspberry Pi. Our code runs on real vehicles, not just in simulation, so it has already met the failure modes you are hitting: the USB port that renumbers between boots, the telemetry stream that keeps arriving with a timestamp that stopped advancing, the extrinsic that is transposed rather than mistuned.",
+      "On the automation side it is Modbus and OPC-UA acquisition with alarms and a historian, workflow engines with real retry and resume semantics, and retrieval-grounded assistants that cite your documents and refuse when they cannot. On the product side it is React and React Native applications for machines in the field, built by the same people who write the real-time code underneath.",
+      "We write software only. That includes the software that runs on hardware — firmware for your flight controller, drivers, embedded C and C++, board bring-up in software terms, ROS 2 nodes, MAVLink integration and perception. It does not include building, wiring, assembling or repairing the machine, and it does not include PCB or mechanical design. Nothing has to be shipped to us: photos, logs, parameter dumps and a clear description are what we work from.",
+      "Everything we publish is open, tested and honest about its limits. Read the code before you talk to us."
+    ],
+    "how_i_work_heading": "How we work",
+    "how_i_work": [
+      "Describe the machine or the process, the versions, and send whatever evidence you have — a log, a bag file, a register map, a screenshot of the failure, a document corpus. We will tell you within a working day whether this is something we can fix and roughly what it takes.",
+      "We analyse the evidence and send a written report: what is actually failing, the reasoning behind that conclusion, what we ruled out, and the specific changes we would make. It is a fixed low price and it stands on its own. If you take the report and do the work in-house, that is a fine outcome.",
+      "If you want it built, we scope it against the report and work in visible increments. You get running code, not a status update. Scope changes get flagged when we find them, not at delivery.",
+      "Code with comments and tests, a README that explains how to run it, and a recorded walkthrough of the architecture and the parameters worth touching. On Premium engagements we stay available while you run it on your own hardware or put it in front of real users."
+    ]
+  }
+}
